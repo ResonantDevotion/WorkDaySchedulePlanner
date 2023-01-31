@@ -27,6 +27,9 @@ N/A
 ## Usage 
 Deployed application should look like the following images:
 
+<img width="1428" alt="Screenshot 2023-01-31 at 6 24 26 PM" src="https://user-images.githubusercontent.com/119468426/215673057-cc37d087-e720-4fdb-9450-ecdc781aa9b0.png">
+
+
 
 ## Credits
 Thanks to Skills Bootcamp, my tutor, Martin, and my classmate Ben for helping me pseudo.

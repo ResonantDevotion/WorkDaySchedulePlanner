@@ -29,6 +29,7 @@ Deployed application should look like the following images:
 
 <img width="1428" alt="Screenshot 2023-01-31 at 6 24 26 PM" src="https://user-images.githubusercontent.com/119468426/215673057-cc37d087-e720-4fdb-9450-ecdc781aa9b0.png">
 
+<img width="1238" alt="Screenshot 2023-02-01 at 11 44 32 AM" src="https://user-images.githubusercontent.com/119468426/215900918-5172cbd8-67f7-4f9e-baab-c5549ad19f89.png">
 
 
 ## Credits

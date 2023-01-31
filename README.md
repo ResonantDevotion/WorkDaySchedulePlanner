@@ -3,7 +3,13 @@ US: 'AS AN employee with a busy schedule I WANT to add important events to a dai
 
 ## Description 
 
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out? 
+This application was dealing with bootstrap, web APIs, jQuery, local storage and moment.js (or some other time function). We had to make a work-day scheduler that displays the time in a bootstrap jumbotron, along with a table with work day hours on the first column followed by an input column and then a column of save buttons to save the corresponding inputs into the local storage. 
+
+This was a challenging assignment but interesting to learn new ways to loop, such as using split to split the IDs into different arrays and then loop through the [x] of the resulting arrays. 
+
+One thing I am still struggling with though is the local storage. 
+
+
 
 The deployed application can be found here at:
 
@@ -21,7 +27,7 @@ Deployed application should look like the following images:
 
 
 ## Credits
-Thanks to Skills Bootcamp, my tutor, Weng, and my classmates on slack.
+Thanks to Skills Bootcamp, my tutor, Martin, and my classmate Ben for helping me pseudo.
 
 ## License
 MIT license.

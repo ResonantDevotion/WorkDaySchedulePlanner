@@ -13,6 +13,8 @@ One thing I am still struggling with though is the local storage.
 
 The deployed application can be found here at:
 
+https://resonantdevotion.github.io/WorkDaySchedulePlanner/
+
 
 ## Table of Contents (Optional)
 N/A

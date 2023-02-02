@@ -1,3 +1,4 @@
+
 //Setting the hero clock
 let clock = moment();
 $('#currentDay').text(clock.format("Do MMMM YYYY hh:mm:ss a"));
@@ -15,6 +16,11 @@ let pastTimeCol = function(divPointer) {
 let futureTimeCol = function(divPointer) {
     divPointer.addClass('future')
 };
+
+
+let input = $('.input');
+let save = $('.saveBtn');
+let timeBlock = $('.time-block');
 
 // loop through table to change background colour based on relation to time.
 $(".colors").each(function () {
@@ -38,26 +44,59 @@ $(".colors").each(function () {
         currentTimeCol($(this))
     }
     else pastTimeCol($(this))
+
+    let userInput = window.localStorage.getItem('hour');
+    if (userInput) {
+      input.val(userInput);
+    }
 })
 
 
 // linking value of input to local storage
-let input = $('.input');
-let save = $('.saveBtn');
-
-
-save.on("click", function(event){
-    event.preventDefault();
-
     let inputValue = $('.input').val();
 
-    let saveInput = localStorage.setItem("input", inputValue);
+// event delegation so when the save button is clicked on the timeblock..
+timeBlock.on("click", save, function (event) {
+    event.preventDefault();
+    //for each input class call the function..
+    $(".input").each(function (index) {
+      let inputValue = $(this).val();
+      console.log(inputValue);
+      localStorage.setItem("hour" + index, inputValue);
+    });
+  });
 
-    let output = localStorage.getItem("input");
+//WORKS
+let hour5 = localStorage.getItem("hour0")
 
-    output();
-});
 
+
+console.log(hour5);
+
+
+
+// $('.colors').each(function())
+// console.log(localStorage.getItem("hour"));
+
+
+
+
+
+
+
+
+
+//     let saveInput = localStorage.setItem("input", inputValue);
+
+//     let output = localStorage.getItem("input");
+
+
+//     // console.log(output);
+// });
+    // let userInput = window.localStorage.getItem('hour');
+    // if (userInput) {
+    //   input.val(userInput);
+    // }
 // $(".input").each(function () {
 //     let localStorageValue = localStorage.getItem('input');
 //     $(this).val(localStorageValue)
@@ -74,5 +113,4 @@ save.on("click", function(event){
 //     console.log(textTag);
 //     var localStorageValue = localStorage.getItem(textTag);
 //     $(this).val(localStorageValue)
-
 // })

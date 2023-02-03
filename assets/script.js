@@ -69,9 +69,10 @@ timeBlock.on("click", save, function (event) {
 //WORKS
 let hour5 = localStorage.getItem("hour0")
 
-
-
 console.log(hour5);
+
+
+$("#input-5").val(hour5);
 
 
 

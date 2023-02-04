@@ -70,3 +70,12 @@ body {
     transition: all 0.3s ease-in-out;
   }
   
+  .input{
+    width: 100%;
+    height: 120%;
+  }
+
+  .saveBtn{
+    width: 100%;
+    height: fit-content;
+  }
